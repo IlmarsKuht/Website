@@ -1,0 +1,45 @@
+
+$font-weights: (
+    "regular":400,
+    "medium":500,
+    "bold":700
+);
+
+$primary: #326dee;
+$secondary: #1ac886;
+$error: #d32752;
+$info: #f6c31c;
+
+// color palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "gray": #e5e3e3,
+  "black": black,
+  "white": white,
+);
+// borders
+$base-border-thickness: 3px;
+$base-border-radius: 20px;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// box-shadow
+$base-box-shadow: 3px 5px 5px rgb(114, 111, 111);
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;

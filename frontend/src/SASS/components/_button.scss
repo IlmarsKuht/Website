@@ -1,0 +1,14 @@
+.btn{
+    font-size: $base-font-size;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid map-get($colors, 'black' );
+    padding: $base-padding ;
+    margin: $base-margin;
+    background-color: map-get($colors, 'gray');
+    box-shadow: $base-box-shadow;
+    &:hover{
+        background-color: lighten(map-get($colors, 'gray'), 7);
+    }
+
+}

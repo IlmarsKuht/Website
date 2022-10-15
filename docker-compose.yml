@@ -1,0 +1,41 @@
+version: '4.1'
+services:
+  frontend:
+  
+    build: 
+      context: ./frontend
+    volumes:
+      - C:\Users\ilmar\OneDrive\Desktop\WebPage\po\website-page\upload-website\summerproject\frontend:/app
+    ports:
+      - 3000:3000
+    image: frontend:react
+    container_name: react_container
+    command: npm start
+
+  backend:
+    build: ./backend
+    volumes: 
+      - C:\Users\ilmar\OneDrive\Desktop\WebPage\po\website-page\upload-website\summerproject\backend\src:/var/www/html
+    ports:
+      - 9000:80
+    image: backend:php
+
+  db:
+    image: mysql
+    command: --init-file /data/application/init.sql
+    volumes:
+      - ./init.sql:/data/application/init.sql
+    environment:
+       MYSQL_DATABASE: 'ProductDB'
+       MYSQL_ROOT_PASSWORD: 'root'
+    
+    ports:
+      - 3307:3306
+
+  adminer:
+    image: adminer
+    ports:
+      - 9001:8080
+
+
+

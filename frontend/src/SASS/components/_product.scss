@@ -1,0 +1,8 @@
+.product{   
+    display: block;
+    border: $base-border-thickness solid map-get($colors, 'black');
+    text-align: center;
+    .delete-checkbox{
+        margin-right: 100%;
+    }
+}
