@@ -1,6 +1,6 @@
 # Personal Product list website by Ilmārs Kuhtarkis
 
-**docker-compose absolute file paths need to be adjusted and npm installed, afterward "docker-compose up" and page is open in Localhost:3000**
+**docker-compose absolute file paths need to be adjusted and npm installed, afterward in terminal can use the command "docker-compose up" and page will open in Localhost:3000**
 
 **Webpage consists of**
  - **React, SASS for frontend** 
